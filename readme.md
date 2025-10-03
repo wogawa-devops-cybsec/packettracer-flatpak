@@ -46,7 +46,7 @@ Este repositório **NÃO** distribui os binários do Cisco Packet Tracer. Você 
 ### Passo 1: Clone este repositório
 
 ```bash
-git clone https://github.com/seu-usuario/packettracer-flatpak.git
+git clone https://github.com/wogawa-devops-cybsec/packettracer-flatpak.git
 cd packettracer-flatpak
 ```
 
@@ -167,6 +167,7 @@ Os arquivos de configuração deste repositório estão sob a licença MIT.
 - [Cisco Networking Academy](https://www.netacad.com/)
 
 ## ✨ Créditos
+
 Idealizado por Wander Alves Ogawa
 
 Mantido pela comunidade para facilitar o uso do Packet Tracer no Linux.
