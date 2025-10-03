@@ -1,0 +1,23 @@
+# Arquivos de build do Flatpak
+build/
+.flatpak-builder/
+repo/
+*.flatpak
+
+# Binários do Packet Tracer (não devem ser versionados)
+packettracer/files/
+
+# Arquivos temporários
+*.tmp
+*.log
+*~
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo

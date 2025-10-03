@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Cisco Packet Tracer
+GenericName=Network Simulator
+Comment=Network simulation and visualization tool for learning networking concepts
+Comment[pt_BR]=Ferramenta de simulação e visualização de redes para aprendizado de conceitos de redes
+Icon=com.cisco.PacketTracer
+Exec=packettracer-wrapper %F
+Terminal=false
+Categories=Education;Network;Science;
+Keywords=cisco;network;simulator;networking;ccna;
+MimeType=application/x-pkt;application/x-pka;application/x-pkz;
+StartupNotify=true
+StartupWMClass=PacketTracer

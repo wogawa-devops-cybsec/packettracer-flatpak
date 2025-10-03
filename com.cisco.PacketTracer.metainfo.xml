@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>com.cisco.PacketTracer</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>LicenseRef-proprietary</project_license>
+  <name>Cisco Packet Tracer</name>
+  <summary>Network simulation and visualization tool</summary>
+  
+  <description>
+    <p>
+      Cisco Packet Tracer is a powerful network simulation program that allows students 
+      to experiment with network behavior and ask "what if" questions. As an integral 
+      part of the Networking Academy comprehensive learning experience, Packet Tracer 
+      provides simulation, visualization, authoring, assessment, and collaboration 
+      capabilities and facilitates the teaching and learning of complex technology concepts.
+    </p>
+    <p>
+      Features include:
+    </p>
+    <ul>
+      <li>Design and build networks with a variety of devices</li>
+      <li>Configure and troubleshoot networking protocols</li>
+      <li>Visualize network traffic flows</li>
+      <li>Practice CCNA and other networking concepts</li>
+      <li>Create network simulations and labs</li>
+    </ul>
+    <p>
+      Note: This is an unofficial Flatpak packaging. Cisco Packet Tracer is proprietary 
+      software owned by Cisco Systems, Inc. Users must obtain the software from Cisco's 
+      official website and agree to Cisco's license terms.
+    </p>
+  </description>
+  
+  <launchable type="desktop-id">com.cisco.PacketTracer.desktop</launchable>
+  
+  <screenshots>
+    <screenshot type="default">
+      <caption>Main workspace</caption>
+    </screenshot>
+  </screenshots>
+  
+  <url type="homepage">https://www.netacad.com/courses/packet-tracer</url>
+  <url type="help">https://www.netacad.com/</url>
+  
+  <provides>
+    <binary>packettracer-wrapper</binary>
+  </provides>
+  
+  <categories>
+    <category>Education</category>
+    <category>Network</category>
+    <category>Science</category>
+  </categories>
+  
+  <keywords>
+    <keyword>cisco</keyword>
+    <keyword>network</keyword>
+    <keyword>simulator</keyword>
+    <keyword>networking</keyword>
+    <keyword>ccna</keyword>
+  </keywords>
+  
+  <content_rating type="oars-1.1" />
+  
+  <releases>
+    <release version="8.2.2" date="2024-01-15">
+      <description>
+        <p>Flatpak packaging of Cisco Packet Tracer</p>
+      </description>
+    </release>
+  </releases>
+</component>

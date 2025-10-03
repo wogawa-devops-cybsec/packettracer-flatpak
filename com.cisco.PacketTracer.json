@@ -1,0 +1,45 @@
+{
+  "app-id": "com.cisco.PacketTracer",
+  "runtime": "org.freedesktop.Platform",
+  "runtime-version": "23.08",
+  "sdk": "org.freedesktop.Sdk",
+  "command": "packettracer-wrapper",
+  "finish-args": [
+    "--share=network",
+    "--share=ipc",
+    "--socket=x11",
+    "--socket=wayland",
+    "--socket=pulseaudio",
+    "--device=dri",
+    "--filesystem=xdg-documents",
+    "--filesystem=xdg-download",
+    "--filesystem=home",
+    "--env=TMPDIR=/var/tmp"
+  ],
+  "modules": [
+    {
+      "name": "packettracer",
+      "buildsystem": "simple",
+      "sources": [
+        {
+          "type": "dir",
+          "path": "packettracer/files"
+        },
+        {
+          "type": "file",
+          "path": "packettracer-wrapper.sh"
+        }
+      ],
+      "build-commands": [
+        "cp -r opt/pt /app/pt",
+        "chmod -R +x /app/pt/bin/",
+        "install -Dm755 packettracer-wrapper.sh /app/bin/packettracer-wrapper",
+        "echo '=== Verificação de arquivos importantes ==='",
+        "ls -la /app/pt/bin/PacketTracer",
+        "ls -la /app/pt/bin/icudtl.dat",
+        "ls -la /app/pt/bin/QtWebEngineProcess",
+        "echo '=== Fim da verificação ==='"
+      ]
+    }
+  ]
+}
