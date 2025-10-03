@@ -167,9 +167,11 @@ Os arquivos de configuração deste repositório estão sob a licença MIT.
 - [Cisco Networking Academy](https://www.netacad.com/)
 
 ## ✨ Créditos
-
+Idealizado por Wander Alves Ogawa
 Mantido pela comunidade para facilitar o uso do Packet Tracer no Linux.
 
 ---
-
+<div align="center">
+  💚 Made with love in Brazil 💛 🇧🇷
+</div>
 **Nota**: Este é um projeto não-oficial e não é afiliado, endossado ou patrocinado pela Cisco Systems, Inc.
