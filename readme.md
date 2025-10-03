@@ -168,6 +168,7 @@ Os arquivos de configuração deste repositório estão sob a licença MIT.
 
 ## ✨ Créditos
 Idealizado por Wander Alves Ogawa
+
 Mantido pela comunidade para facilitar o uso do Packet Tracer no Linux.
 
 ---
