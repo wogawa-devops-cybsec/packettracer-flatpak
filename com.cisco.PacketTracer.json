@@ -34,10 +34,14 @@
         "cp -r opt/pt /app/pt",
         "chmod -R +x /app/pt/bin/",
         "install -Dm755 packettracer-wrapper.sh /app/bin/packettracer-wrapper",
-        "echo '=== Verificação de arquivos importantes ==='",
-        "ls -la /app/pt/bin/PacketTracer",
-        "ls -la /app/pt/bin/icudtl.dat",
-        "ls -la /app/pt/bin/QtWebEngineProcess",
+        "mkdir -p /app/share/applications /app/share/metainfo /app/share/icons/hicolor/128x128/apps",
+        "install -Dm644 opt/pt/art/app.png /app/share/icons/hicolor/128x128/apps/com.cisco.PacketTracer.png 2>/dev/null || install -Dm644 opt/pt/art/icon.png /app/share/icons/hicolor/128x128/apps/com.cisco.PacketTracer.png 2>/dev/null || echo 'Icon not found, using fallback'",
+        "cat > /app/share/applications/com.cisco.PacketTracer.desktop << 'EOF'\n[Desktop Entry]\nType=Application\nVersion=1.0\nName=Cisco Packet Tracer\nGenericName=Network Simulator\nComment=Network simulation and visualization tool\nIcon=com.cisco.PacketTracer\nExec=packettracer-wrapper %F\nTerminal=false\nCategories=Education;Network;Science;\nKeywords=cisco;network;simulator;\nMimeType=application/x-pkt;application/x-pka;application/x-pkz;\nStartupNotify=true\nEOF",
+        "cat > /app/share/metainfo/com.cisco.PacketTracer.metainfo.xml << 'EOF'\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<component type=\"desktop-application\">\n  <id>com.cisco.PacketTracer</id>\n  <metadata_license>CC0-1.0</metadata_license>\n  <project_license>LicenseRef-proprietary</project_license>\n  <name>Cisco Packet Tracer</name>\n  <summary>Network simulation tool</summary>\n  <description><p>Network simulation and visualization tool for learning networking concepts.</p></description>\n  <launchable type=\"desktop-id\">com.cisco.PacketTracer.desktop</launchable>\n  <categories><category>Education</category></categories>\n</component>\nEOF",
+        "echo '=== Verificação de instalação ==='",
+        "ls -la /app/share/applications/com.cisco.PacketTracer.desktop",
+        "ls -la /app/share/metainfo/com.cisco.PacketTracer.metainfo.xml",
+        "ls -la /app/share/icons/hicolor/128x128/apps/com.cisco.PacketTracer.png 2>/dev/null || echo 'Icon not installed'",
         "echo '=== Fim da verificação ==='"
       ]
     }
