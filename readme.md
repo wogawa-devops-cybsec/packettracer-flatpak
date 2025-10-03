@@ -1,3 +1,6 @@
+[![GitHub](https://img.shields.io/github/license/wogawa-devops-cybsec/packettracer-flatpak)](LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/wogawa-devops-cybsec/packettracer-flatpak)](https://github.com/wogawa-devops-cybsec/packettracer-flatpak/stargazers)
+
 # Cisco Packet Tracer - Flatpak
 
 Empacotamento Flatpak não-oficial do Cisco Packet Tracer para distribuições Linux.
